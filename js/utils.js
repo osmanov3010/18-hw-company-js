@@ -9,9 +9,9 @@ function createButtonDel(callBack) {
     const buttonDel = document.createElement('button');
     buttonDel.appendChild(document.createTextNode('X'));
     buttonDel.classList.add('del');
-    buttonDel.onclick = ({target}) => {
+    buttonDel.onclick = ({ target }) => {
         target.parentElement.remove();
-        if(typeof callBack === 'function'){
+        if (typeof callBack === 'function') {
             callBack();
         }
     }

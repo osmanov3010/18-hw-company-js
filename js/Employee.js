@@ -57,11 +57,11 @@ class Employee extends Person {
         }
     }
 
-    toString = function (){
+    toString = function () {
         return `ID: ${this._id}, First name: ${this._firstName}, Last Name: ${this._lastName}, Age: ${this.age}, Salary: ${this._salary},`
     }
 
-    createNode = function (){
+    createNode = function () {
         return createInfoElement(this.toString(), 'li');
     }
 }
